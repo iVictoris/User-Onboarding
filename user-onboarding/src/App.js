@@ -13,7 +13,7 @@ function App() {
   const generateUserCards = () => {
     const cards = users.length > 0 ? users.map(({id, name, email, createdAt}) => {
       return (
-        <section className='card'>
+        <section className='card' key={id}>
           <div className='id'>{id}</div>
           <div className='name'>{name}</div>
           <div className='email'>{email}</div>
